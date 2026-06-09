@@ -224,7 +224,7 @@ sudo systemctl start nexus
 
 step 19:  Access the Nexus server from Laptop/Desktop browser.
 
-http://52.66.73.219:8081/
+http://43.205.119.42:8081/
 
 step 20: click on login
 
