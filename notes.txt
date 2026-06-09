@@ -161,6 +161,13 @@ run_as_user="nexus"
 
 #step 15: Create nexus as a service
 
+On newer distributions (Amazon Linux 2023, RHEL 9, etc.), /etc/init.d may not be present because they use systemd.
+
+You don't need the symlink
+
+Instead create and use the systemd service:
+vi /etc/systemd/system/nexus.service
+
 #ln -s /opt/nexus/bin/nexus /etc/init.d/nexus
 
 
