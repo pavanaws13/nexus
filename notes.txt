@@ -175,9 +175,12 @@ step 16: Switch as a nexus user and start the nexus service as follows.
 
 sudo su - nexus
 
-
-
-
+========================got it from chatGpt==========
+/opt/sonatype-work           nexus nexus
+/opt/sonatype-work/nexus3    root  root
+need to change the ownership of nexus3 file to nexus
+sudo chown -R nexus:nexus /opt/sonatype-work/nexus3
+=============================================
 step 17: Enable the nexus services
 
 sudo systemctl status nexus
